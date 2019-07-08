@@ -3617,7 +3617,7 @@ input[type="button"].btn-block {
       align-items: center; }
 
 .navbar-toggler {
-  padding: 0.25rem 0.75rem;
+  padding: 0.25rem 0.5rem;
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
@@ -8131,12 +8131,40 @@ a.text-dark:hover, a.text-dark:focus {
       transform: scale(1.05);
   transition: .5s; }
 
+.nav-border {
+  border-bottom: 1px solid #dee2e677; }
+
+.show {
+  display: block; }
+
+.navbar-brand h1 {
+  font-size: 32px;
+  margin-left: 18px;
+  padding: 17px 0px; }
+
 .navbar-brand img {
-  height: 22px; }
+  height: 36px; }
+
+@media (max-width: 767px) {
+  .navbar-brand h1 {
+    font-size: 22px;
+    margin-left: 12px;
+    padding: 9px 0px; }
+  .navbar-brand img {
+    height: 26px;
+    display: block; } }
+
+@media (max-width: 400px) {
+  .navbar-brand h1 {
+    font-size: 20px;
+    margin-left: 0px; }
+  .navbar-brand img {
+    display: none; } }
 
 .news {
-  max-width: 700px;
-  margin-top: 145px; }
+  max-width: 640px;
+  margin-top: 135px;
+  margin-bottom: 110px; }
   @media (max-width: 850px) {
     .news {
       font-size: 18px;
@@ -8151,12 +8179,14 @@ a.text-dark:hover, a.text-dark:focus {
 footer {
   font-size: 14px; }
 
-.wrap {
-  margin-top: 145px; }
-
 .fixed-bottom {
   font-size: 14px;
   width: 30px; }
+  .fixed-bottom a {
+    color: #fff;
+    text-decoration: none; }
+  .fixed-bottom a:hover {
+    color: #b4b4b4; }
   @media (max-width: 576px) {
     .fixed-bottom {
       position: relative;
@@ -8172,7 +8202,7 @@ footer {
     font-size: 14px;
     margin-bottom: 2px; }
 
-.show {
-  display: block; }
+.alert-warning a {
+  color: #816100; }
 
 /*# sourceMappingURL=all.css.map */

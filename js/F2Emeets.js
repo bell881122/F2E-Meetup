@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     $('.carousel').carousel({
-        interval: 3000
+        interval: 4000
     })
 
     $(".light-box").click(function (e) {
@@ -36,14 +36,14 @@ $(document).ready(function () {
         var tab = this.id;
         var tabClass = '.' + tab + '';
         $("#tab-pane").children().hide();
-        $("#tab-pane").find(tabClass).slideDown("slow");
+        $("#tab-pane").find(tabClass).fadeIn("slow");
     });
     $('#all').click(function (e) {
         e.preventDefault();
         var tab = this.id;
         var tabClass = '.' + tab + '';
         $("#tab-pane").children().hide();
-        $("#tab-pane").children().slideDown("slow");
+        $("#tab-pane").children().fadeIn("slow");
     });
         // alert(tabClass);
         // 
