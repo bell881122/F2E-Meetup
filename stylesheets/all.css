@@ -8101,7 +8101,9 @@ a.text-dark:hover, a.text-dark:focus {
   visibility: hidden !important; }
 
 @font-face {
-  font-family: 'Noto Sans TC', sans-serif; }
+  font-family: 'Noto Sans TC', sans-serif; 
+  src: url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,700&display=swap&subset=chinese-traditional');
+}
 
 body {
   font-family: 'Noto Sans TC', sans-serif; }
