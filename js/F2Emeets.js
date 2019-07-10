@@ -26,32 +26,52 @@ $(document).ready(function () {
 
     $(".clickdown").click(function () {
         $(this).parent().parent().find(".clickdown-menu").slideToggle();
-
         // $(this).find(".hover-show").addClass("fadeIn");
         // $(".hover-show-text").attr("style", "transform: translateY(0)");
     });
 
-    $('#webdesign, #uxui, #react').click(function (e) {
+    $('#webdesign, #uxui, #frontEnd').click(function (e) {
         e.preventDefault();
         var tab = this.id;
-        var tabClass = '.' + tab + '';
-        $("#tab-pane").children().hide();
-        $("#tab-pane").find(tabClass).fadeIn("slow");
+        var tabClass = '.' + tab;
+        // alert(tabClass);
+        $("#event-content").children().hide();
+        $("#event-content").find(tabClass).fadeIn("slow");
     });
     $('#all').click(function (e) {
         e.preventDefault();
         var tab = this.id;
         var tabClass = '.' + tab + '';
-        $("#tab-pane").children().hide();
-        $("#tab-pane").children().fadeIn("slow");
+        $("#event-content").children().hide();
+        $("#event-content").children().fadeIn("slow");
     });
-        // alert(tabClass);
-        // 
+
+    //menu click scroll
+    $('.scrollTop').click(function (e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        var targetPos = $(target).offset().top;
+        $('html, body').animate({ scrollTop: targetPos-135 }, 800);
+    });
+
+    $(window).scroll(function () {
+        var scrollPos = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        console.log(scrollPos, windowHeight);
+
+        $('.scrollTop').each(function () {
+            var target = $(this).attr('href');
+            var targetPos = $(target).offset().top;
+            var targetHeight = $(target).outerHeight();
+            if (targetPos - 1 <= scrollPos && (targetPos + targetHeight) > scrollPos) {
+                $('.scrollTop').removeClass('active')
+                $(this).addClass('active');
+            } else {
+                $(this).removeClass('active')
+            }
+        });
 
 
-        // console.log();
-
-
+    });
 
 });
-

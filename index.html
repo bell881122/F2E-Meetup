@@ -26,13 +26,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">News</a>
+          <a class="nav-link scrollTop" href="#news">News</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Events</a>
+          <a class="nav-link scrollTop" href="#events">Events</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About us</a>
+          <a class="nav-link scrollTop" href="#aboutUs">About us</a>
         </li>
       </ul>
     </div>
@@ -40,7 +40,7 @@
 
   <div class="wrap">
 
-    <section class="container">
+    <section class="container" id="news">
       <div class="news ml-auto mr-auto">
         <p class="h5 ml-3 pl-2">NEWS</p>
         <div id="carouselExampleControls" class="carousel slide w-100 d-flex justify-content-center align-items-center"
@@ -51,7 +51,7 @@
             </span>
             <span class="sr-only">Previous</span>
           </a>
-          <div class="carousel-inner mx-2">
+          <div class="carousel-inner mx-2 border-bottom">
             <div class="carousel-item bg-white active">
               <p class="my-0">F2E-MEETUP 2019-07 報名開始囉！<small><a href="#">報名點我</a></small></p>
             </div>
@@ -74,160 +74,344 @@
     </section>
 
 
-    <section class="container">
+    <section class="container" id="events">
       <div class="tab d-flex justify-content-center align-content-start flex-wrap ml-auto mr-auto" id="list-tab"
         role="tablist">
         <a href="#" class="text-color-1 active" id="all">all</a>
-        <a href="#" class="text-color-2" id="webdesign">Web design</a>
         <a href="#" class="text-color-5" id="uxui">UI/UX</a>
-        <a href="#" class="text-color-3" id="react">React</a>
-        <a href="#" class="text-color-4" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab"
-          aria-controls="settings">React</a>
-        <a href="#" class="text-color-6" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab"
-          aria-controls="settings">React</a>
+        <a href="#" class="text-color-3" id="frontEnd">Front-End</a>
+        <a href="#" class="text-color-2" id="webdesign">Web design</a>
+        <a href="#" class="text-color-4" id="">Web</a>
+        <a href="#" class="text-color-6" id="">design</a>
       </div>
 
     </section>
 
     <section class="container">
-          <div class="row my-5" id="tab-pane">
-            <div class="col-lg-6 uxui react webdesign">
-              <div class="card costum-shadow hover-animated scale light-box">
-                <a class="text-dark text-decoration-none"
-                  href="https://drive.google.com/file/d/15AB9A92jSyrGeZebcFK4-Nh2k-Rkyuw4/preview" data-toggle="modal"
-                  data-target=".bd-example-modal-xl">
-                  <div class="card-overlay text-white">
-                    <img src="img/event201903.jpg" class="card-img" alt="event201903">
-                    <div class="card-img-overlay bg-gradient-dark hover-show">
-                      <small class="card-text hover-show-text">講師：ABC</small>
-                    </div>
-                  </div>
-                </a>
-                <div class="card-body">
-                  <p class="card-title h6">uxui react webdesign</p>
-                  <small class="card-text d-block">2019-03 F2E Meetup</small>
-                  <div class="d-flex clickdown">
-                    <div href="#" class="btn btn-outline-secondary py-0 px-1 ml-auto">more</div>
-                  </div>
-                </div>
-                <div class="card-footer clickdown-menu bg-info text-white">
-                  <h5 class=" h6">講師介紹 ABC</h5>
-                  <p>XXX科技公司</p>
-                  <p>X年前端經驗</p>
-                  <p>專案作品：aaa、bbb、ccc</p>
+      <div class="row my-5 events-content" id="event-content">
+        <div class="col-lg-6">
+          <div class="card costum-shadow hover-animated scale light-box">
+            <a class="text-dark text-decoration-none"
+              href="https://docs.google.com/presentation/d/17fYiWptVUU74YDJZPYloUwshTdaU3GDiYaE0NeJGXoE/edit#slide=id.p"
+              data-toggle="modal" data-target=".bd-example-modal-xl">
+              <div class="card-overlay text-white">
+                <img src="img/event201903.jpg" class="card-img" alt="event201903">
+                <div class="card-img-overlay bg-gradient-dark hover-show">
+                  <small class="card-text hover-show-text">講者／sorosora 王証頡</small>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-6 uxui react">
-              <div class="card costum-shadow hover-animated scale light-box">
-                <a class="text-dark text-decoration-none"
-                  href="https://docs.google.com/presentation/d/1ndy6_W4MzT3CN7PCcUIdppzEkabGZb6pXS44zgQwApM/edit#slide=id.g2394205e82_0_0"
-                  data-toggle="modal" data-target=".bd-example-modal-xl">
-                  <div class="card-overlay text-white">
-                    <img src="img/event201903.jpg" class="card-img" alt="event201903">
-                    <div class="card-img-overlay bg-gradient-dark hover-show">
-                      <small class="card-text hover-show-text">講師：ABC</small>
-                    </div>
-                  </div>
-                </a>
-                <div class="card-body">
-                  <p class="card-title h6">uxui react</p>
-                  <small class="card-text d-block">2019-03 F2E Meetup</small>
-                  <div class="d-flex clickdown">
-                    <div href="#" class="btn btn-outline-secondary py-0 px-1 ml-auto">more</div>
-                  </div>
-                </div>
-                <div class="card-footer clickdown-menu bg-info text-white">
-                  <h5 class=" h6">講師介紹 ABC</h5>
-                  <p>XXX科技公司</p>
-                  <p>X年前端經驗</p>
-                  <p>專案作品：aaa、bbb、ccc</p>
-                </div>
+            </a>
+            <div class="card-body">
+              <p class="card-title h6">建立通用開發模式，一個打十個！</p>
+              <small class="card-text d-block">2019/06/25 六月號</small>
+              <div class="d-flex clickdown">
+                <a href="#" class="btn btn-outline-secondary py-0 px-1 ml-auto">more</a>
               </div>
             </div>
-            <div class="col-lg-6 webdesign">
-              <div class="card costum-shadow hover-animated scale light-box">
-                <a class="text-dark text-decoration-none"
-                  href="https://drive.google.com/file/d/15AB9A92jSyrGeZebcFK4-Nh2k-Rkyuw4/preview" data-toggle="modal"
-                  data-target=".bd-example-modal-xl">
-                  <div class="card-overlay text-white">
-                    <img src="img/event201903.jpg" class="card-img" alt="event201903">
-                    <div class="card-img-overlay bg-gradient-dark hover-show">
-                      <small class="card-text hover-show-text">講師：ABC</small>
-                    </div>
-                  </div>
-                </a>
-                <div class="card-body">
-                  <p class="card-title h6">webdesign</p>
-                  <small class="card-text d-block">2019-03 F2E Meetup</small>
-                  <div class="d-flex clickdown">
-                    <div href="#" class="btn btn-outline-secondary py-0 px-1 ml-auto">more</div>
-                  </div>
-                </div>
-                <div class="card-footer clickdown-menu bg-info text-white">
-                  <h5 class=" h6">講師介紹 ABC</h5>
-                  <p>XXX科技公司</p>
-                  <p>X年前端經驗</p>
-                  <p>專案作品：aaa、bbb、ccc</p>
-                </div>
-              </div>
+            <div class="card-footer clickdown-menu bg-info text-white w-100">
+              <h5 class=" h6">講題簡介：</h5>
+              <p class="font-weight-light">
+                一次又一次接案經驗裡，面對動態網站、靜態網站與無障礙網站等，各式各樣的專案需求，在不使用套版網站的前提下，要如何快速切版、建立通用的開發模式與設計共用模組，並且將每一次開發精華融合新技術，立即運用於下一個專案中。本次分享使用Next.js搭配styled-components作為例子，希望激發大家能建立開發模式於自己習慣的框架上，或是擁抱這個組合。
+              </p>
             </div>
-            <div class="col-lg-6 uxui">
-              <div class="card costum-shadow hover-animated scale light-box">
-                <a class="text-dark text-decoration-none"
-                  href="https://drive.google.com/file/d/15AB9A92jSyrGeZebcFK4-Nh2k-Rkyuw4/preview" data-toggle="modal"
-                  data-target=".bd-example-modal-xl">
-                  <div class="card-overlay text-white">
-                    <img src="img/event201903.jpg" class="card-img" alt="event201903">
-                    <div class="card-img-overlay bg-gradient-dark hover-show">
-                      <small class="card-text hover-show-text">講師：ABC</small>
-                    </div>
-                  </div>
-                </a>
-                <div class="card-body">
-                  <p class="card-title h6">uxui</p>
-                  <small class="card-text d-block">2019-03 F2E Meetup</small>
-                  <div class="d-flex clickdown">
-                    <div href="#" class="btn btn-outline-secondary py-0 px-1 ml-auto">more</div>
-                  </div>
-                </div>
-                <div class="card-footer clickdown-menu bg-info text-white">
-                  <h5 class=" h6">講師介紹 ABC</h5>
-                  <p>XXX科技公司</p>
-                  <p>X年前端經驗</p>
-                  <p>專案作品：aaa、bbb、ccc</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 react">
-              <div class="card costum-shadow hover-animated scale light-box">
-                <a class="text-dark text-decoration-none"
-                  href="https://drive.google.com/file/d/15AB9A92jSyrGeZebcFK4-Nh2k-Rkyuw4/preview" data-toggle="modal"
-                  data-target=".bd-example-modal-xl">
-                  <div class="card-overlay text-white">
-                    <img src="img/event201903.jpg" class="card-img" alt="event201903">
-                    <div class="card-img-overlay bg-gradient-dark hover-show">
-                      <small class="card-text hover-show-text">講師：ABC</small>
-                    </div>
-                  </div>
-                </a>
-                <div class="card-body">
-                  <p class="card-title h6">react</p>
-                  <small class="card-text d-block">2019-03 F2E Meetup</small>
-                  <div class="d-flex clickdown">
-                    <div href="#" class="btn btn-outline-secondary py-0 px-1 ml-auto">more</div>
-                  </div>
-                </div>
-                <div class="card-footer clickdown-menu bg-info text-white">
-                  <h5 class=" h6">講師介紹 ABC</h5>
-                  <p>XXX科技公司</p>
-                  <p>X年前端經驗</p>
-                  <p>專案作品：aaa、bbb、ccc</p>
-                </div>
-              </div>
-            </div>
-
           </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card costum-shadow hover-animated scale light-box">
+            <a class="text-dark text-decoration-none"
+              href="https://drive.google.com/file/d/1CvwqYkoc19jTmoa9gZN7eHsHBC6J_PW8/preview" data-toggle="modal"
+              data-target=".bd-example-modal-xl">
+              <div class="card-overlay text-white">
+                <img src="img/event201903.jpg" class="card-img" alt="event201903">
+                <div class="card-img-overlay bg-gradient-dark hover-show">
+                  <small class="card-text hover-show-text">講者／KK 徐愷</small>
+                </div>
+              </div>
+            </a>
+            <div class="card-body">
+              <p class="card-title h6">前端開發心法</p>
+              <small class="card-text d-block">2019/06/25 六月號</small>
+              <div class="d-flex clickdown">
+                <a href="#" class="btn btn-outline-secondary py-0 px-1 ml-auto">more</a>
+              </div>
+            </div>
+            <div class="card-footer clickdown-menu bg-info text-white w-100">
+              <h5 class=" h6">講題簡介：</h5>
+              <p class="font-weight-light">
+                從專案的開始到結束，介紹每個步驟在開發上需要注意與思考的面向，前端開發並不只需要埋頭寫程式或是追求潮流，從一開始的技術線選擇到後端對接，商業邏輯的釐清到效能優化，套件採用到穩定度與可維護性等等，希望透過此次分享讓大家一起全面性的思考整個前端開發。
+              </p>
+              <p>PS. 此分享雖以 React 為案例，包括但不限於此前端框架</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 uxui">
+          <div class="card costum-shadow hover-animated scale light-box">
+            <a class="text-dark text-decoration-none"
+              href="https://drive.google.com/file/d/14FKXE8P87W5gZlDGwuY1y-Qfw769Cbsj/preview" data-toggle="modal"
+              data-target=".bd-example-modal-xl">
+              <div class="card-overlay text-white">
+                <img src="img/event201903.jpg" class="card-img" alt="event201903">
+                <div class="card-img-overlay bg-gradient-dark hover-show">
+                  <small class="card-text hover-show-text">講者／李皓錞 Philip Li</small>
+                </div>
+              </div>
+            </a>
+            <div class="card-body">
+              <p class="card-title h6">如何做有影響力的使用者研究</p>
+              <small class="card-text d-block">2019/05/28 五月號</small>
+              <div class="d-flex clickdown">
+                <a href="#" class="btn btn-outline-secondary py-0 px-1 ml-auto">more</a>
+              </div>
+            </div>
+            <div class="card-footer clickdown-menu bg-info text-white w-100">
+              <h5 class=" h6">講題簡介：</h5>
+              <p class="font-weight-light">
+                身為 UX 設計師，反應使用者聲音似乎是很自然的。但到底該怎麼蒐集使用者的意見？我們提出奢侈方案、平易方案及簡樸方案供大家參考。然而，不是 UX
+                設計師手上有了使用者的回饋，別人就要依你的建議做調整。使用者回饋的價值，是建立在影響力上——也就是看別人願意接受多少程度——這次也分享相關經驗跟大家交流。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card costum-shadow hover-animated scale light-box">
+            <a class="text-dark text-decoration-none"
+              href="https://drive.google.com/file/d/1DkBqWjluG05b0bOnA3647OXIY15_dw0U/preview" data-toggle="modal"
+              data-target=".bd-example-modal-xl">
+              <div class="card-overlay text-white">
+                <img src="img/event201903.jpg" class="card-img" alt="event201903">
+                <div class="card-img-overlay bg-gradient-dark hover-show">
+                  <small class="card-text hover-show-text">講者／Daniel Wu</small>
+                </div>
+              </div>
+            </a>
+            <div class="card-body">
+              <p class="card-title h6">打造 Component 軍火庫</p>
+              <small class="card-text d-block">2019/04/25 四月號</small>
+              <div class="d-flex clickdown">
+                <a href="#" class="btn btn-outline-secondary py-0 px-1 ml-auto">more</a>
+              </div>
+            </div>
+            <div class="card-footer clickdown-menu bg-info text-white w-100">
+              <h5 class=" h6">講題簡介：</h5>
+              <p class="font-weight-light">
+                當自己寫越來越多前端，用了越來越多的 Open Source Library 之後，是不是有時候會遇到以下問題：
+                </br>
+                ‧ 用的 Library 太大，明明只需要一個小功能，卻整個包山包海包進來。
+                </br>
+                ‧ 怎麼修改現成的 Library 都沒辦法改成設計師畫出來的樣子。
+                </br>
+                ‧ 嘗試硬改 Library 的內容到最後卻不記得裡面到底改過了什麼。
+                </br>
+                而後開始思考，我是不是能夠自己寫這些 Component 呢？
+                又或者是在試著開發 Component 之後，發現怎麼寫都沒辦法符合需求、換個頁面就要重新修改一次，最後一個元件寫了五個版本放在不同的地方。
+                這次講者將分享自身在前端開發時因應 Style Guide 開發 Component 的經驗，以及開發時所考慮的方向，不論使用 Vanilla JS 或 Vue、 React 等框架，都能對想要自己寫
+                Component 甚至推出去成為
+                Open Source 可以有一些幫助。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card costum-shadow hover-animated scale light-box">
+            <a class="text-dark text-decoration-none"
+              href="https://www.icloud.com/keynote/0EDS2leQUmNKZw7Wo0wTr1urg?fbclid=IwAR2N0p2dSaXuvzpKALDOkcFQQxmQJ20KjMECG-QNluMp2Fd-9sIDV6yK7bo#GraphQL_talk"
+              data-toggle="modal" data-target=".bd-example-modal-xl">
+              <div class="card-overlay text-white">
+                <img src="img/event201903.jpg" class="card-img" alt="event201903">
+                <div class="card-img-overlay bg-gradient-dark hover-show">
+                  <small class="card-text hover-show-text">講者／Zhusee (iCHEF)</small>
+                </div>
+              </div>
+            </a>
+            <div class="card-body">
+              <p class="card-title h6">使用 Apollo + React 簡單導入 GraphQL</p>
+              <small class="card-text d-block">2019/04/25 四月號</small>
+              <div class="d-flex clickdown">
+                <a href="#" class="btn btn-outline-secondary py-0 px-1 ml-auto">more</a>
+              </div>
+            </div>
+            <div class="card-footer clickdown-menu bg-info text-white w-100">
+              <h5 class=" h6">講題簡介：</h5>
+              <p class="font-weight-light">
+                近年來有越來越多的網站或服務開始嘗試 GraphQL，用更簡單與更彈性的方式從 API 取得需要的資料。本次講者將分享在 iCHEF 透過 Apollo 實際導入 GraphQL 的經驗，希望能帶給有興趣加入
+                GraphQL 的朋友一些幫助。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card costum-shadow hover-animated scale light-box">
+            <a class="text-dark text-decoration-none"
+              href="https://www.icloud.com/keynote/0EDS2leQUmNKZw7Wo0wTr1urg?fbclid=IwAR2N0p2dSaXuvzpKALDOkcFQQxmQJ20KjMECG-QNluMp2Fd-9sIDV6yK7bo#GraphQL_talk"
+              data-toggle="modal" data-target=".bd-example-modal-xl">
+              <div class="card-overlay text-white">
+                <img src="img/event201903.jpg" class="card-img" alt="event201903">
+                <div class="card-img-overlay bg-gradient-dark hover-show">
+                  <small class="card-text hover-show-text">講者／陳怡君 Ginger</small>
+                </div>
+              </div>
+            </a>
+            <div class="card-body">
+              <p class="card-title h6">要訪談幾個人才夠做 Persona</p>
+              <small class="card-text d-block">2019/03/15 三月號</small>
+              <div class="d-flex clickdown">
+                <a href="#" class="btn btn-outline-secondary py-0 px-1 ml-auto">more</a>
+              </div>
+            </div>
+            <div class="card-footer clickdown-menu bg-info text-white w-100">
+              <h5 class=" h6">講題簡介：</h5>
+              <p class="font-weight-light">
+                想像你是誕生在新手村，你想要打怪，升級，買裝備，但空空如也的你，要如何踏出第一步呢？和村長聊聊是個好主意，誒等等，這聊聊不就是「訪談」嗎？ 我是 Tofutype Ginger ,
+                會分享如何根據產品問題狀況，擬定訪談策略，和如何有效快速收集情報。也會聊聊產業界的 UIUX 設計師，如何定位自己，和面對瞬息萬變的市場狀況。歡迎大家一起來聊聊~
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card costum-shadow hover-animated scale light-box">
+            <a class="text-dark text-decoration-none"
+              href="https://www.icloud.com/keynote/0EDS2leQUmNKZw7Wo0wTr1urg?fbclid=IwAR2N0p2dSaXuvzpKALDOkcFQQxmQJ20KjMECG-QNluMp2Fd-9sIDV6yK7bo#GraphQL_talk"
+              data-toggle="modal" data-target=".bd-example-modal-xl">
+              <div class="card-overlay text-white">
+                <img src="img/event201903.jpg" class="card-img" alt="event201903">
+                <div class="card-img-overlay bg-gradient-dark hover-show">
+                  <small class="card-text hover-show-text">講者／Dorothy J. Pan</small>
+                </div>
+              </div>
+            </a>
+            <div class="card-body">
+              <p class="card-title h6">國際跨文化溝通與設計語言制定</p>
+              <small class="card-text d-block">2019/03/15 三月號</small>
+              <div class="d-flex clickdown">
+                <a href="#" class="btn btn-outline-secondary py-0 px-1 ml-auto">more</a>
+              </div>
+            </div>
+            <div class="card-footer clickdown-menu bg-info text-white w-100">
+              <h5 class=" h6">講題簡介：</h5>
+              <p class="font-weight-light">
+                講者先前服務於Motorola亞太團隊，Locate在中國區，除了大中華本身的各地設計對接之外，並統整亞洲的設計語言，且參與中國東北、印度、俄羅斯等用戶調查與研究，收集這些中國數據庫與亞洲用戶反饋之後，與北美、拉丁美洲等全球設計團隊共同制定未來一年的
+                Moto Design Language。其中的跨文化差異，是我們因文化差異而有的巨大影響或改變......。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card costum-shadow hover-animated scale light-box">
+            <a class="text-dark text-decoration-none"
+              href="https://www.icloud.com/keynote/0EDS2leQUmNKZw7Wo0wTr1urg?fbclid=IwAR2N0p2dSaXuvzpKALDOkcFQQxmQJ20KjMECG-QNluMp2Fd-9sIDV6yK7bo#GraphQL_talk"
+              data-toggle="modal" data-target=".bd-example-modal-xl">
+              <div class="card-overlay text-white">
+                <img src="img/event201903.jpg" class="card-img" alt="event201903">
+                <div class="card-img-overlay bg-gradient-dark hover-show">
+                  <small class="card-text hover-show-text">講者／懷恩</small>
+                </div>
+              </div>
+            </a>
+            <div class="card-body">
+              <p class="card-title h6">React Design Pattern</p>
+              <small class="card-text d-block">2019/01/23 一月號</small>
+              <div class="d-flex clickdown">
+                <a href="#" class="btn btn-outline-secondary py-0 px-1 ml-auto">more</a>
+              </div>
+            </div>
+            <div class="card-footer clickdown-menu bg-info text-white w-100">
+              <h5 class=" h6">講題簡介：</h5>
+              <p class="font-weight-light">
+                React 經過了幾年的淬煉，一起一探究竟 React 的 Pattern 演進與實際應用吧！
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card costum-shadow hover-animated scale light-box">
+            <a class="text-dark text-decoration-none"
+              href="https://www.icloud.com/keynote/0EDS2leQUmNKZw7Wo0wTr1urg?fbclid=IwAR2N0p2dSaXuvzpKALDOkcFQQxmQJ20KjMECG-QNluMp2Fd-9sIDV6yK7bo#GraphQL_talk"
+              data-toggle="modal" data-target=".bd-example-modal-xl">
+              <div class="card-overlay text-white">
+                <img src="img/event201903.jpg" class="card-img" alt="event201903">
+                <div class="card-img-overlay bg-gradient-dark hover-show">
+                  <small class="card-text hover-show-text">講者／kcliu</small>
+                </div>
+              </div>
+            </a>
+            <div class="card-body">
+              <p class="card-title h6">Takeaways from React Day Berlin</p>
+              <small class="card-text d-block">2019/01/23 一月號</small>
+              <div class="d-flex clickdown">
+                <a href="#" class="btn btn-outline-secondary py-0 px-1 ml-auto">more</a>
+              </div>
+            </div>
+            <div class="card-footer clickdown-menu bg-info text-white w-100">
+              <h5 class=" h6">講題簡介：</h5>
+              <p class="font-weight-light">
+                分享參加 React Day Berlin 的所見所聞以及一些 talks 的 summary。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card costum-shadow hover-animated scale light-box">
+            <a class="text-dark text-decoration-none"
+              href="https://www.icloud.com/keynote/0EDS2leQUmNKZw7Wo0wTr1urg?fbclid=IwAR2N0p2dSaXuvzpKALDOkcFQQxmQJ20KjMECG-QNluMp2Fd-9sIDV6yK7bo#GraphQL_talk"
+              data-toggle="modal" data-target=".bd-example-modal-xl">
+              <div class="card-overlay text-white">
+                <img src="img/event201903.jpg" class="card-img" alt="event201903">
+                <div class="card-img-overlay bg-gradient-dark hover-show">
+                  <small class="card-text hover-show-text">講者／陳威宏 Edison Chen</small>
+                </div>
+              </div>
+            </a>
+            <div class="card-body">
+              <p class="card-title h6">Design Sprint 到底在衝三小？</p>
+              <small class="card-text d-block">2018/12/20 十二月號</small>
+              <div class="d-flex clickdown">
+                <a href="#" class="btn btn-outline-secondary py-0 px-1 ml-auto">more</a>
+              </div>
+            </div>
+            <div class="card-footer clickdown-menu bg-info text-white w-100">
+              <h5 class=" h6">講題簡介：</h5>
+              <p class="font-weight-light">
+                你或許聽過 Design Sprint，設計衝刺。但你可能不知道為什麼做個產品設計都要衝衝衝？往哪裡衝？該怎麼衝？作為設計圈第一百零一位談論 Design Sprint
+                的產品設計師，我想跟你分享的是我在企業內部組織 Design
+                Sprint 的經驗與學習、吃過的虧和踩過的雷。透過實際的案例述說一段愛與夢醒的故事。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card costum-shadow hover-animated scale light-box">
+            <a class="text-dark text-decoration-none"
+              href="https://www.icloud.com/keynote/0EDS2leQUmNKZw7Wo0wTr1urg?fbclid=IwAR2N0p2dSaXuvzpKALDOkcFQQxmQJ20KjMECG-QNluMp2Fd-9sIDV6yK7bo#GraphQL_talk"
+              data-toggle="modal" data-target=".bd-example-modal-xl">
+              <div class="card-overlay text-white">
+                <img src="img/event201903.jpg" class="card-img" alt="event201903">
+                <div class="card-img-overlay bg-gradient-dark hover-show">
+                  <small class="card-text hover-show-text">講者／Yolanda Chiu</small>
+                </div>
+              </div>
+            </a>
+            <div class="card-body">
+              <p class="card-title h6">AsiaYo 使用者研究 & Design Sprint 實作經驗分享</p>
+              <small class="card-text d-block">2018/12/20 十二月號</small>
+              <div class="d-flex clickdown">
+                <a href="#" class="btn btn-outline-secondary py-0 px-1 ml-auto">more</a>
+              </div>
+            </div>
+            <div class="card-footer clickdown-menu bg-info text-white w-100">
+              <h5 class=" h6">講題簡介：</h5>
+              <p class="font-weight-light">
+                AsiaYo 是佈局亞洲的網路訂房平台，今年中 AsiaYo 產品團隊內嘗試了 Google Design Sprint Workshop ，不算完全成功哈，蠻多血淚可以和大家分享在新創推 User
+                centered driven 專案的經驗。
+                在通常沒有專職 Researcher 的新創組織中， PM 通常得想辦法從僅有的資源與時間與 Designer 執行使用者訪談，身為 PM ，Yolanda 將分享其中遇到的問題與後續推展產品開發流程的瓶頸。
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
     </section>
 
 
@@ -235,81 +419,109 @@
 
   <div class="fixed-bottom d-none d-sm-block">
     <div class="bg-color-2 rounded-left">
-      <p class="mb-1 p-2"><a href="#">活動報名</a></p>
+      <p class="mb-1 p-2"><a href="https://f2e.kktix.cc/" target="_blank">活動報名</a></p>
     </div>
     <div class="bg-color-5 rounded-left">
       <p class="p-2"><a href="#">我要報名講師</a></p>
     </div>
   </div>
 
-  <div class="container mb-4">
+  <div class="container mb-5">
     <div class="alert alert-warning" role="alert">
-      <a href="#">
-        我要報名／推坑別人當講師！
+      <h5 class="d-inline">閃開，讓專業的來！</h5>
+      <a class="text-primary ml-3" href="#">
+        我要報名／推坑別人當講師
       </a>
     </div>
 
   </div>
 
-  <footer class="bg-dark text-white">
-    <div class="container py-3">
+  <section class="about-us bg-dark text-white" id="aboutUs">
+    <div class="container py-5">
       <div class="row">
-        <div class="col-lg-5 col-md-6 col-sm-6">
-          <div class="single-footer-widget">
-            <h6>About Us</h6>
-            <p>
-              前端經驗分享，希望前端能夠成為台灣一個成熟的產業! 主要討論: 前端網頁技術，使用者介面探討，網頁設計。 HTML，CSS，JavaScript等語言技術討論，瀏覽器開發工具。 iOS, Android 等
-              Mobile App 使用者介面相關議題討論。
-            </p>
-          </div>
+        <div class="col-md-6 mb-4">
+          <h5 class="mb-4">About Us</h5>
+          <h6 class="mb-2">Front-End Developers Taiwan</h6>
+          <p class="mb-1 text-justify font-weight-light">希望前端能夠成為台灣一個成熟的產業！</br>
+            主要討論：前端網頁技術，使用者介面探討，網頁設計。
+            HTML，CSS，JavaScript等語言技術討論，瀏覽器開發工具。iOS, Android 等 Mobile App 使用者介面相關議題討論。
+            也歡迎前端經驗分享，以及企業徵才。</p>
+          <p>We dedicate ourselves in promoting front-end technology in Taiwan. Focusing on web technology, user
+            interface, and web
+            design. Programming language discussion - HTML, CSS and JavaScript, or browser development tools. View
+            source discussion
+            of mobile app such as iOS, Android . We also welcome you to share front-end experience and recruiting
+            information with
+            us.</p>
         </div>
-        <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
-          <div class="single-footer-widget">
-            <h6>Follow Us</h6>
-            <p>Let us be social</p>
-            <div class="footer-social d-flex align-items-center">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-dribbble"></i></a>
-              <a href="#"><i class="fa fa-behance"></i></a>
+        <div class="col-md-6 mb-4">
+          <h5 class="mb-4">Contact us</h5>
+          <form>
+            <div class="form-group">
+              <label for="input-name">姓名</label>
+              <input type="text" class="form-control" id="input-name" placeholder="您的大名" required>
             </div>
-          </div>
+            <div class="form-row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="input-email">Email</label>
+                  <input type="email" class="form-control" id="input-email" placeholder="常用聯絡信箱" required>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="input-tel">聯絡電話</label>
+                  <input type="tel" class="form-control" id="input-tel" placeholder="聯絡電話" required>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="input-subject">主旨</label>
+              <input type="text" class="form-control" id="input-subject" required>
+            </div>
+            <div class="form-group">
+              <label for="input_comments">意見</label>
+              <textarea class="form-control" id="input_comments" rows="3"></textarea>
+            </div>
+            <button class="btn btn-secondary d-flex ml-auto" type="submit">Submit form</button>
+          </form>
         </div>
-        <div class="col-lg-12">
-          <p class="footer-text">
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;
-            <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with
-            <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
-              target="_blank">bell881122</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          </p>
+        <div class="col-md-6">
+          <h5 class="mb-3">Follow us</h5>
+          <ul class="list-inline">
+            <li class="list-inline-item mr-3">
+              <a href="https://www.facebook.com/groups/f2etw" target="_blank">
+                <img class="h-100" src="img/facebook-square-brands.png" alt="">
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://f2e.kktix.cc/" target="_blank">
+                <img class="h-100" src="img/logo_ms_w-161f23b7062367d346435bf2d77663c6.png" alt="" style="height: 18px">
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
 
-
-
-      <p class="h5">Contact us</p>
-      <ul class="list-inline d-flex align-items-end">
-        <li class="list-inline-item">
-          <a class="bg-dark pl-1 pr-1 pb-1 d-block" href="https://f2e.kktix.cc/" target="_blank">
-            <img src="img/logo_ms_w-161f23b7062367d346435bf2d77663c6.png" alt="" style="height: 18px">
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="d-block pb-0 mb-0" href="#" target="_blank">
-            <i class="fab fa-facebook-square text-dark h3 mb-0 "></i>
-          </a>
-        </li>
-        <li class="list-inline-item">Nulla volutpat</li>
-      </ul>
-
-
-
-      <small>@Copyright All Reserved 2019</small>
-
     </div>
+  </section>
+  <footer class="bg-light text-dark">
+    <div class="row py-3">
+      <div class="col text-center">
+        <p class="mb-0">
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          Copyright &copy;
+          <script>document.write(new Date().getFullYear());</script>
+          All rights reserved | This template is made with
+          <i class="fa fa-heart" aria-hidden="true"></i> by <a href="#" target="_blank">bell881122</a>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </p>
+      </div>
+    </div>
+
   </footer>
+
+
   <!-- Extra large modal -->
   <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
     aria-hidden="true">
