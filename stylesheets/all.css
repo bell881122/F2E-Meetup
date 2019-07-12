@@ -3866,7 +3866,7 @@ input[type="button"].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
   border-radius: 0.25rem; }
   .card > hr {
     margin-right: 0;
@@ -8115,7 +8115,7 @@ body {
 
 .bg-gradient-dark {
   bottom: 0px;
-  background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.35)); }
+  background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.4)); }
 
 .hover-show {
   opacity: 0;
@@ -8169,9 +8169,11 @@ body {
   .navbar-brand img {
     display: none; } }
 
+.wrap {
+  margin-top: 135px; }
+
 .news {
   max-width: 640px;
-  margin-top: 145px;
   margin-bottom: 80px; }
   @media (max-width: 850px) {
     .news {
@@ -8221,5 +8223,13 @@ footer {
 
 .alert-warning a {
   color: #816100; }
+
+.card-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.card-footer a {
+  color: #a3f3ff; }
 
 /*# sourceMappingURL=all.css.map */

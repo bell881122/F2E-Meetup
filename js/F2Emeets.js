@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     $(".light-box").click(function (e) {
         e.preventDefault();
-        var link = $(this).find("a").attr("href");
+        var link = $(this).attr("href");
         $(".embed-responsive-item").attr("src", link);
     });
 
@@ -25,12 +25,13 @@ $(document).ready(function () {
 
 
     $(".clickdown").click(function () {
+        // e.preventDefault();
         $(this).parent().parent().find(".clickdown-menu").slideToggle();
         // $(this).find(".hover-show").addClass("fadeIn");
         // $(".hover-show-text").attr("style", "transform: translateY(0)");
     });
 
-    $('#webdesign, #uxui, #frontEnd').click(function (e) {
+    $('#frontEnd, #uxui, #webDesign, #react, #apollo').click(function (e) {
         e.preventDefault();
         var tab = this.id;
         var tabClass = '.' + tab;
